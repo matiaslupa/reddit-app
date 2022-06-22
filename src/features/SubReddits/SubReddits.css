@@ -1,0 +1,46 @@
+.btn-orange{
+    background-color: rgba(106, 42, 141, 0.428);
+    font-weight: 600; 
+    border-color: rgba(106, 42, 141, 0.428);
+    border-width: 1px;
+    color: white;
+}
+
+.btn-orange:hover{
+    background-color: rgba(106, 42, 141, 0.428);
+    color: white;
+}
+
+.btn-orange:focus{
+    color: aqua;
+}
+
+
+a{
+    color: white;
+    text-decoration: none !important;
+}
+
+.dropdown-menu{
+    background-color: black;
+    margin-left: 10px;
+}
+
+.dropdown-item{
+    font-weight: 600;
+    border-radius: 7px;
+    width: 180px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+}
+
+.dropdown-item:hover{
+    font-weight: 600;
+    font-size: 17px;
+    border: aqua 2px solid !important;
+    border-radius: 5px;
+    background-color: #9c3cc4;
+    color: aqua;
+}
+
