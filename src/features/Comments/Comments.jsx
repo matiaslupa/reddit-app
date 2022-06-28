@@ -11,6 +11,7 @@ import { selectPosts } from '../Posts/PostsSlice';
 import { formatTimestamp } from '../../helpers/helpers';
 import { TbArrowBack } from 'react-icons/tb';
 import { useHistory } from 'react-router-dom';
+import './Comments.css';
 
 function Comments() {
   const comments = useSelector(selectComments);
@@ -76,19 +77,18 @@ function Comments() {
                       (replies, indexReplies) => {
                         if (replies.data.body) {
                           return (
-                            <div className="row ml-5" key={indexReplies}>
-                              <div className="col border rounded border-dark mx-5 bg-white mb-2">
-                                
-                                  {isLoading ? (
-                                    <Skeleton />
-                                  ) : (
-                                    <p className="mt-3">
+                            <div className="row justify-content-end" key={indexReplies}>
+                              <div className="col border rounded border-dark sub-comments bg-white mb-2">
+                                {isLoading ? (
+                                  <Skeleton />
+                                ) : (
+                                  <p className="mt-3">
                                     <ReactMarkdown className="markdown">
                                       {replies.data.body}
                                     </ReactMarkdown>
-                                    </p>
-                                  )}
-                                
+                                  </p>
+                                )}
+
                                 {!isLoading && (
                                   <p className="card-text  d-inline">
                                     <small className="text-muted">

@@ -45,5 +45,10 @@ a{
     color: white;
 }
 
-
+@media only screen and (max-width: 770px) {
+    .dropdown-menu{
+        margin-left: -150px !important;
+        
+    }
+}
 
