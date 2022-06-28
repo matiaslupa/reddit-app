@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   selectPosts,
   selectIsLoading,
-  selectHasError,
   loadPosts,
 } from './PostsSlice';
 import { Link, useParams } from 'react-router-dom';
@@ -13,7 +12,7 @@ import './Posts.css';
 import { formatTimestamp } from '../../helpers/helpers';
 import ReactMarkdown from 'react-markdown';
 
-import {loadComments, selectComments} from '../Comments/CommentsSlice'
+import {loadComments} from '../Comments/CommentsSlice'
 import { FaComments } from 'react-icons/fa';
 
 
@@ -52,7 +51,7 @@ function Posts() {
 
   return (
     <SkeletonTheme baseColor="" highlightColor="#00000026">
-      <div className="container ">
+      <div className="container container-post">
         {posts.map((post, id) => {
           return (
             <div

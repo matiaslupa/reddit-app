@@ -4,20 +4,18 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import {
   selectSubReddits,
-  selectIsLoading,
-  // selectHasError,
+  
   loadSubReddits,
 } from './SubRedditsSlice';
 
 //CSS
-import { Spinner } from 'reactstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './SubReddits.css';
 
 const SubReddits = () => {
   const subReddits = useSelector(selectSubReddits);
-  const isLoading = useSelector(selectIsLoading);
-  // const hasError = useSelector(selectHasError);
+
 
 
   const dispatch = useDispatch();

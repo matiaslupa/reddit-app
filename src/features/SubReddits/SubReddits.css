@@ -45,12 +45,5 @@ a{
     color: white;
 }
 
-@media only screen and (max-width: 1200px) {
-   /*  .btn-subreddit{
-        position: relative;
-        left: 600px;
-        background-color: red;
-        z-index: 1;
-    } */
-}
+
 
