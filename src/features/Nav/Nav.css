@@ -14,7 +14,7 @@
 }
 
 .buttons:focus{
-    color: white;
+    color: aqua !important;
     border-color: #04BF9D;
     background-color: #04BF9D;
 

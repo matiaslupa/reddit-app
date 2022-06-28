@@ -233,7 +233,8 @@ function Posts() {
                           aria-expanded="false"
                           aria-controls="collapseExample"
                           onClick={() => {
-                            dispatch(loadComments(post.permalink));
+                            dispatch(loadComments(post.permalink))
+                            window.scrollTo(0, 0);;
                           }}
                         >
                         <span className='num-comments'><FaComments /> </span> {!isLoading && post.num_comments} Comments  
