@@ -60,14 +60,14 @@ function Posts() {
             >
               <div className="col mt-4">
                 <div className="card mb-3">
-                  <div className="card-body">
+                  <div className="card-body pt-2">
                     <div className="row">
                       {isLoading ? (
                         <Skeleton width={100} />
                       ) : (
-                        <div className="col">
+                        <div className="col mb-2">
                           <Link to={post.subreddit} className=" link-subreddit">
-                            <small className="text-muted link-subreddit">
+                            <small className="text-muted link-small">
                               {post.subreddit}
                             </small>
                           </Link>

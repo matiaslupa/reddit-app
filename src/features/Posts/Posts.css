@@ -25,11 +25,22 @@
 }
 
 .link-subreddit{
-  font-weight: 700 !important;
-  color: #F27457 !important;
+  
+ 
+  
+  margin-left: -5px;
+  margin-top: -10px !important;
 }
 
-.link-subreddit:hover{
+.link-small{
+  font-weight: 700 !important;
+  color: white !important;
+  background-color: #FF4500;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.link-small:hover{
   text-decoration: underline;
 }
 
