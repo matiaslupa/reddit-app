@@ -223,7 +223,7 @@ function Posts() {
                     )}
 
                     <div>
-                      <div className="d-flex justify-content-between mt-2">
+                      <div className="d-flex justify-content-between mt-2 flex-wrap-reverse div-posted">
                         <Link to="/comments">
                         <button
                           className="btn btn-primary btn-comments"
@@ -242,7 +242,7 @@ function Posts() {
                         {isLoading ? (
                           <Skeleton className="mt-2" width={280} />
                         ) : (
-                          <p className="card-text mt-2 d-inline mr-2">
+                          <p className="card-text mt-2 d-inline mr-2 posted">
                             <small className="text-muted">
                               {`Posted by `}{' '}
                               <span className="author" href="">
