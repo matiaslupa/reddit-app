@@ -19,17 +19,22 @@ const SubReddits = () => {
   const isLoading = useSelector(selectIsLoading);
   // const hasError = useSelector(selectHasError);
 
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(loadSubReddits());
   }, [dispatch]);
 
+  const onClick = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
-    <div className="btn-group pl-5 ">
-        <Link className="" to="/popular">
-      <button type="button" className="btn color-white btn-orange">
-          {isLoading ? <Spinner color="white" type="grow" size="sm"/> : "SubReddits"}
+    <div className="btn-group btn-subreddit">
+        <Link className="d-none d-md-inline" to="/popular">
+      <button type="button" className="btn btn-orange" onClick={onClick}>
+          Popular
       </button>
         </Link>
 

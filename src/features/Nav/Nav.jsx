@@ -4,6 +4,7 @@ import { FaPepperHot, FaRegSun } from 'react-icons/fa';
 import { GiSpaceShuttle } from 'react-icons/gi';
 import { MdDataExploration } from 'react-icons/md';
 import './Nav.css';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
 
 function Nav() {
@@ -12,36 +13,31 @@ function Nav() {
 
 
   return (
+    <SkeletonTheme>
     <div className="container mt-5">
       <div className="row">
-        <div className="col-3"></div>
-        <div className="col-6 d-flex justify-content-center py-1 mt-5 rounded colum">
-          <Link className="color-white" to="best">
+        
+        <div className="col d-flex justify-content-center py-1 rounded colum">
+          <Link className="color-white mx-1 mx-lg-3" to="top">
             <button type="button" className="btn buttons color-white mx-1">
-            <GiSpaceShuttle /> Best 
+            <FaPepperHot className='pepper'/> Top
             </button>
           </Link>
-
-          <Link className="color-white" to="hot">
+          <Link className="color-white mx-1 mx-lg-3" to="new">
             <button type="button" className="btn buttons color-white mx-1">
-              <span className='text'><FaPepperHot /> Hot </span>
-            
+            <FaRegSun className='sun'/> New 
             </button>
           </Link>
-          <Link className="color-white" to="new">
+          <Link className="color-white mx-1 mx-lg-3" to="rising">
             <button type="button" className="btn buttons color-white mx-1">
-            <FaRegSun /> New 
-            </button>
-          </Link>
-          <Link className="color-white" to="top">
-            <button type="button" className="btn buttons color-white mx-1">
-            <MdDataExploration /> Top
+            <MdDataExploration  className='top'/> Rising 
             </button>
           </Link>
         </div>
-        <div className="col-3"></div>
+        
       </div>
     </div>
+    </SkeletonTheme>
   );
 }
 

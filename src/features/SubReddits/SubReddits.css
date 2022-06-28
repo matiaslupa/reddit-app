@@ -1,18 +1,15 @@
 .btn-orange{
-    background-color: rgba(106, 42, 141, 0.428);
+    background-color: #253659 !important;
     font-weight: 600; 
-    border-color: rgba(106, 42, 141, 0.428);
-    border-width: 1px;
     color: white;
 }
 
 .btn-orange:hover{
-    background-color: rgba(106, 42, 141, 0.428);
-    color: white;
+    color: #F27457;
 }
 
 .btn-orange:focus{
-    color: aqua;
+    color: #F27457;
 }
 
 
@@ -22,8 +19,11 @@ a{
 }
 
 .dropdown-menu{
-    background-color: black;
-    margin-left: 10px;
+    background-color: white;
+    color: black;
+    margin-left: -100px;
+   
+    
 }
 
 .dropdown-item{
@@ -31,16 +31,26 @@ a{
     border-radius: 7px;
     width: 180px;
     font-weight: 500;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
+    border-color: black;
 }
 
 .dropdown-item:hover{
     font-weight: 600;
     font-size: 17px;
-    border: aqua 2px solid !important;
+    border: #253659 2px solid !important;
     border-radius: 5px;
-    background-color: #9c3cc4;
-    color: aqua;
+    background-color: #253659;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+   /*  .btn-subreddit{
+        position: relative;
+        left: 600px;
+        background-color: red;
+        z-index: 1;
+    } */
 }
 

@@ -1,15 +1,15 @@
 
  .post-image-container {
-    max-width: 100%;
+    max-width: 700px;
     overflow: hidden;
-    max-height: 600px;
-    
+    max-height: 800px;
   }
   
   .post-image-container .post-image {
     max-width: 100%;
     height: auto;
     display: block;
+    
   }
 
   .post-video{
@@ -19,9 +19,63 @@
   }
 
 
-
-
 .rows{
     max-width: 700px;
-    background-color: rgba(106, 42, 141, 0.428);
+    background-color: #00000026;
+}
+
+.link-subreddit{
+  font-weight: 700 !important;
+  color: #F27457 !important;
+}
+
+.link-subreddit:hover{
+  text-decoration: underline;
+}
+
+
+.links{
+  font-weight: 500 !important;
+  color: blueviolet !important;
+}
+
+.links:hover{
+  text-decoration: underline;
+}
+
+.author{
+  font-size: 14px;
+  font-weight: 500;
+  color: #253659 !important;
+}
+
+.markdown a{
+  color: blueviolet;
+  text-decoration: underline !important;
+
+}
+
+.markdown a:hover{
+  color: blueviolet;
+  text-decoration: underline !important;
+}
+
+.btn-comments{
+  background-color: #253659 !important;
+    font-weight: 600; 
+    margin-bottom: 0px;
+}
+
+.btn-comments:hover{
+  color: aqua;
+  border-color: aqua;
+}
+
+.btn-comments:focus{
+  color: aqua;
+  border-color: aqua;
+}
+
+.num-comments{
+  color: aqua;
 }
